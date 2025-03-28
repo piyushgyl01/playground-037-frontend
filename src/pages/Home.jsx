@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   const { loading, data, error, refetch } = useFetch(
-    "http://localhost:3000/cars"
+    "https://playground-037-backend.vercel.app/cars"
   );
   console.log(data);
 
   async function handleDelete(id) {
     if (window.confirm("Are you sure you want to delete this car?")) {
       try {
-        const response = await fetch(`http://localhost:3000/cars/${id}`, {
+        const response = await fetch(`https://playground-037-backend.vercel.app/${id}`, {
           method: "DELETE",
         });
 
