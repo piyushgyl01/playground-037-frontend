@@ -103,6 +103,7 @@ export default function Form({ isEditMode }) {
               className="form-control"
               name="make"
               id="make"
+              placeholder="e.g., Toyota, Honda, BMW"
               value={formData.make}
               onChange={(e) =>
                 setFormData({ ...formData, make: e.target.value })
@@ -120,6 +121,7 @@ export default function Form({ isEditMode }) {
               className="form-control"
               name="imgURL"
               id="imgURL"
+              placeholder="https://example.com/car-image.jpg"
               value={formData.imgURL}
               onChange={(e) =>
                 setFormData({ ...formData, imgURL: e.target.value })
@@ -137,6 +139,7 @@ export default function Form({ isEditMode }) {
               className="form-control"
               name="model"
               id="model"
+              placeholder="e.g., Camry, Civic, X5"
               value={formData.model}
               onChange={(e) =>
                 setFormData({ ...formData, model: e.target.value })
@@ -154,6 +157,7 @@ export default function Form({ isEditMode }) {
               className="form-control"
               name="year"
               id="year"
+              placeholder="e.g., 2022"
               value={formData.year}
               onChange={(e) =>
                 setFormData({
@@ -174,6 +178,7 @@ export default function Form({ isEditMode }) {
               className="form-control"
               name="color"
               id="color"
+              placeholder="e.g., Red, Blue, Silver"
               value={formData.color}
               onChange={(e) =>
                 setFormData({ ...formData, color: e.target.value })
@@ -191,6 +196,7 @@ export default function Form({ isEditMode }) {
               className="form-control"
               name="price"
               id="price"
+              placeholder="e.g., 25000"
               value={formData.price}
               onChange={(e) =>
                 setFormData({
@@ -255,6 +261,7 @@ export default function Form({ isEditMode }) {
               className="form-control"
               name="mileage"
               id="mileage"
+              placeholder="e.g., 15000"
               value={formData.mileage}
               onChange={(e) =>
                 setFormData({
@@ -275,6 +282,7 @@ export default function Form({ isEditMode }) {
               className="form-control"
               name="features"
               id="features"
+              placeholder="e.g., Sunroof, Navigation, Bluetooth, Backup Camera"
               value={formData.features.join(", ")}
               onChange={(e) =>
                 setFormData({
