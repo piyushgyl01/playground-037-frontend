@@ -8,7 +8,7 @@ export default function Details() {
   const { id } = useParams();
 
   const { data, loading, error, refetch } = useFetch(
-    `https://playground-037-backend.vercel.app/${id}`
+    `https://playground-037-backend.vercel.app/cars/${id}`
   );
 
   console.log(data);

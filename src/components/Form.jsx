@@ -20,7 +20,7 @@ export default function Form({ isEditMode = true }) {
   const navigate = useNavigate();
 
   const { data, loading, error, refetch } = useFetch(
-    `https://playground-037-backend.vercel.app/${id}`
+    `https://playground-037-backend.vercel.app/cars/${id}`
   );
   console.log(data);
 
@@ -47,7 +47,7 @@ export default function Form({ isEditMode = true }) {
 
     try {
       if (isEditMode) {
-        const response = await fetch(`https://playground-037-backend.vercel.app/${id}`, {
+        const response = await fetch(`https://playground-037-backend.vercel.app/cars/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
