@@ -11,7 +11,7 @@ export default function Home() {
   async function handleDelete(id) {
     if (window.confirm("Are you sure you want to delete this car?")) {
       try {
-        const response = await fetch(`https://playground-037-backend.vercel.app/${id}`, {
+        const response = await fetch(`https://playground-037-backend.vercel.app/cars/${id}`, {
           method: "DELETE",
         });
 
