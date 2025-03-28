@@ -136,7 +136,7 @@ export default function Details() {
                 <Link to="/" className="btn btn-secondary">
                   Back to Listings
                 </Link>
-                <Link to={`/edit/${data._id}`} className="btn btn-primary">
+                <Link to={`/update/${data._id}`} className="btn btn-primary">
                   Edit
                 </Link>
               </div>
